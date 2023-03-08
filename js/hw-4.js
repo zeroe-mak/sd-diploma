@@ -10,7 +10,11 @@ function calcRetiredAge(isFemaleGender) {
   // Если значение аргумента isFemaleGender истинно, то присвойте в переменную retireAge значение 60.
   // Если значение аргумента isFemaleGender ложно, в переменную retireAge присвойте значение 65.
   // Пишите код ниже:
-
+  if(isFemaleGender) {
+    retireAge = 60;
+  } else {
+    retireAge = 65;
+  }
 }
 // calcRetiredAge — это функция вычисления пенсионного возраста, в качестве аргумента передаём пол (isFemaleGender).
 
@@ -25,8 +29,13 @@ function colorizeDots(weeks) {
     // Если значение перебираемой недели меньше произведения retireAge на 52, то это взрослая жизнь, до выхода на пенсию. Присвойте в переменную colorClass значение '_adult'.
     // Если текущая неделя больше произведения retireAge на 52, то это старость. Присвойте в переменную colorClass значение '_senior'.
     // Пишите код ниже:
-
-
+    if(i < 18 * 52) {
+      colorClass = '_young';
+    } else if(i < retireAge * 52) {
+      colorClass = '_adult';
+    } else {
+      colorClass = '_senior';
+    }
 
     // Удаляем класс пустой точки:
     dots[i].classList.remove('_empty'); 
