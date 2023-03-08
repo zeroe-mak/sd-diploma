@@ -8,12 +8,12 @@ function calcWeeks(birthday) {
   // 1. Создайте переменную, в которой хранится количество минут в часе.
   // 2. Создайте переменную, в которой хранится количество часов в сутках.
   // Пишите код ниже:
-
-
+  let minInHour = 60;
+  let hourInDay = 24;
 
   // Задача 3.
   // В коде ниже замените нули в строке ниже на переменную минут и переменную часов:
-  let livedWeeks = Math.floor((today - birthDate) / 1000 / 60 / 0 / 0 / 7); 
+  let livedWeeks = Math.floor((today - birthDate) / 1000 / 60 / minInHour / hourInDay / 7); 
 
   return livedWeeks; 
 }
