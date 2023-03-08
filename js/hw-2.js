@@ -4,23 +4,23 @@
 // Задача 1.
 // Отформатируйте код ниже, используя кодстайл: https://github.com/netology-code/codestyle/tree/master/js
 function showingMiddleAge(isFemaleGender) {
-
-  let middleAge; let genderName;if (isFemaleGender) {
+  let middleAge;
+  let genderName;
+  
+  if (isFemaleGender) {
   // Задача 2.
   // Присвойте переменной среднего возраста значение 77.6 — средний возраст для женщин.
   // Присвойте переменной названия пола строку 'женщин'.
   // Пишите код ниже:
-
-
-
+    middleAge = 77.6;
+    genderName = 'женщин';
   } else {
   // Задача 2.
   // Присвойте переменной среднего возраста значение 67.5 — средний возраст для мужчин.
   // Присвойте переменной названия пола строку 'мужчин'.
   // Пишите код ниже:
-
-
-
+    middleAge = 67.5;
+    genderName = 'мужчин';
   }
   // Задача 3.
   // Создайте переменную testGenderNameAndMiddleAge.
@@ -28,8 +28,8 @@ function showingMiddleAge(isFemaleGender) {
   // Для склейки используйте оператор +.
   // Выведите в консоль переменную testGenderNameAndMiddleAge.
   // Пишите код ниже:
-
-
+    let testGenderNameAndMiddleAge = genderName + " - " + middleAge;
+    console.log(testGenderNameAndMiddleAge);
 
   // Это вывод эталона в консоль:
   console.log("Эталон:", genderName, '-', middleAge); 
