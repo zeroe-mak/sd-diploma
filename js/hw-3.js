@@ -9,10 +9,10 @@ function emptyDots() {
     // Задача 1.
     // Откройте следующее домашнее задание (hw-4.js) и посмотрите, какие в нём используются классы для точек.
     // В коде ниже исправьте ошибки в именах классов так, чтобы при вызове данной функции точки очищались:
-    dots[i].classList.remove('_yung'); 
-    dots[i].classList.remove('_abult');
-    dots[i].classList.remove('_seniorita');
-    dots[i].classList.add('empty');
+    dots[i].classList.remove('_young'); 
+    dots[i].classList.remove('_adult');
+    dots[i].classList.remove('_senior');
+    dots[i].classList.add('_empty');
   }
 }
 
